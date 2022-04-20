@@ -1,0 +1,265 @@
+/*--------- default css ---------- */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+section,div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, ol, ul, li, figcaption, textarea, input {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {font-size: 1.3rem; font-family: 'Work Sans', sans-serif;}
+
+img {max-width: 100%;}
+
+.font-1 { font-size:1rem;}
+.font-13 { font-size:1.3rem;}
+.font-14 { font-size:1.4rem;}
+.font-15 { font-size:1.5rem;}
+.font-16 { font-size:1.6rem;}
+.font-17 { font-size:1.7rem;}
+.font-18 { font-size:1.8rem;}
+.font-19 { font-size:1.9rem;}
+.font-2 { font-size:2rem;}
+.font-21 { font-size:2.1rem;}
+.font-22 { font-size:2.2rem;}
+.font-23 { font-size:2.3rem;}
+.font-24 { font-size:2.4rem;}
+.font-25 { font-size:2.5rem;}
+.font-26 { font-size:2.6rem;}
+.font-27 { font-size:2.7rem;}
+.font-28 { font-size:2.8rem;}
+.font-29 { font-size:2.9rem;}
+.font-3 { font-size:3rem;}
+.font-31 { font-size:3.1rem;}
+.font-32 { font-size:3.2rem;}
+.font-33 { font-size:3.3rem;}
+.font-34 { font-size:3.4rem;}
+.font-35 { font-size:3.5rem;}
+.font-36 { font-size:3.6rem;}
+
+.dft-thin {font-weight:300;}
+.dft-regular {font-weight: 400;}
+.dft-medium {font-weight: 500;}
+.dft-semibold {font-weight: 600;}
+
+
+/*---------- header design ---------- */
+.my-style-logo {
+    color:rgba(0,0,0,8);
+    font-size:1.6rem;
+    transition: 0.4s;
+}
+
+.my-style-logo:hover {
+    color:rgba(0,0,0,0.3);    
+}
+
+#navbarSupportedContent a:hover {
+    color:rgb(11, 94, 215);
+}
+
+/* ---------- banner design ----------- */
+.slider-sec {
+     background-image:url(./image/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding:180px 0; */
+}
+
+.slider-sec .opacity {
+    background-color: rgba(0,0,0,0.5);
+    padding:200px 0 140px;
+}
+
+.slider-sec h3 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.slider-sec p {
+    font-size: 2.6rem;
+    line-height: 1.4;
+}
+
+/*---------- health section --------- */
+.health-sec {
+    background-color: #F7F9FF;
+}
+
+.health-sec h1 {
+    font-size: 2.8rem;
+}
+
+/*--------- card section ---------- */
+
+.card-sec .card {
+    box-shadow:5px 5px 15px rgba(0,0,0,0.05), -5px -5px 15px rgba(0,0,0,0.05);
+    border:none;
+    transition:0.3s;
+}
+
+.card-sec .card:hover {
+    box-shadow:5px 5px 20px rgba(0,0,0,0.15), -5px -5px 20px rgba(0,0,0,0.15);
+}
+
+.card-sec img {
+    border-radius:4px 4px 0 0;
+}
+
+/* img section  */
+/* 
+.img-sec .row .col-lg-4 {
+    position:relative;
+}
+.hover-div {
+    display: none;
+    background-color: rgba(11, 94, 215,0.7);
+
+    position:absolute;
+    top:0;
+    left:2.5%;
+    right: 2.5%;
+    bottom: 0;
+    transition: 0.5s;
+}
+.img-sec .row .col-lg-4:hover .hover-div {
+    display: block;
+} */
+
+
+.img-sec .col-lg-4 a {
+    position:relative;
+    display: block;
+}
+
+.img-sec .col-lg-4 a::after {
+    content:"";
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 94, 215,0.7);
+
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.img-sec .col-lg-4:hover a::after {
+    visibility: visible;
+}
+
+/*----------- plan section ---------- */
+.plan-sec {
+    background-color: #F7F9FF;
+}
+
+.plan-sec .card {
+    height: 600px;
+}
+
+.plan-sec .plan-btn-my-style{
+    color:rgba(11, 94, 215,1);
+    transition: 0.4s;
+}
+
+.plan-sec .card:hover .plan-btn-my-style{
+    color:#ffffff;
+    background-color: rgba(11, 94, 215,1);
+}
+
+.plan-sec .card .plan-btn-my-style:hover {
+    color:#ffffff;
+    background-color: #000000;
+}
+
+
+/* ---------- team section -------- */
+
+.team-sec {
+    background-color: #F7F9FF;
+}
+
+/* ---------- form section -----------*/
+.form-sec .row input::placeholder, .form-sec .row textarea::placeholder {
+    color:rgba(0,0,0,0.2);
+}
+
+/* -------- App section -------- */
+.app-sec div .btn-outline-info:hover {
+    color:#ffffff;
+}
+
+/* --------footer section------ */
+footer p a {
+
+    color:rgba(0,0,0,0.5);
+}
+
+footer p a:hover {
+    color:rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:992px) {
+
+    /* card section */
+    .card-sec .card {
+        height: 243px;
+    }
+
+    .card-sec img {
+        height: 243px;
+        border-radius:4px 0 0 4px;    
+    }
+
+    /* img section  */
+    .img-sec h3 {
+        font-size: 2.8rem;
+    }
+
+    /* ----------team section -------- */
+
+    .team-sec {
+        background-color: #F7F9FF;
+    }
+
+    .team-sec .img-card-sec .card {
+        position:relative;
+    }
+
+    .team-sec .img-card-sec .card .positioning-img {
+        width:150px;
+        height: auto;
+
+        position:absolute;
+        top:0;
+        left:25px;
+
+        transform: translate(0,-50%);
+    }
+
+
+
+
+
+}
+
+
